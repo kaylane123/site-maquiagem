@@ -1,0 +1,75 @@
+<html>
+<head>
+ <script type="text/javascript" language="javascript">
+        window.onload = function () {
+            var rotator = document.getElementById("rotator");
+            var images = rotator.getElementsByTagName("img");
+            for (var i = 1; i < images.length; i++) {
+                images[i].style.display = "none";
+            }
+            var counter = 1;
+            setInterval(function () {
+                for (var i = 0; i < images.length; i++) {
+                    images[i].style.display = "none";
+                }
+                images[counter].style.display = "block";
+                counter++;
+                if (counter == images.length) {
+                    counter = 0;
+                }
+            }, 1700);
+        };
+    </script>
+	
+	
+<title> Ptodutos </title>
+</head> 
+
+<style>
+
+.capa {
+		width: 85%;
+		height: 75%;
+		
+	}
+
+	.menu {width: 110%;
+
+	}
+	
+.cor {
+	color:black;
+	background-color:#FFB6C1;
+}
+
+
+.menu {width: 110%;
+
+	}
+</style>
+<body>
+ 
+ 
+ 
+ 
+ 
+ <form id="form1">
+    <div id="rotator">
+   <center>     <img alt="" src="base.png"class="capa"></center>
+     <center>   <img alt="" src="batom.png"class="capa"> </center>
+     <center>   <img alt="" src="perfume.png" class="capa"></center>
+     <center>   <img alt="" src="creme.png" class="capa"></center>
+	</div>
+    </form>
+	
+<table class="menu"> 
+
+<td class="cor"> <A href="Quem somos.html"> Quem somos? </a> </td>
+<td class="cor"> <A href="Produtos.html"> Produtos </a></td>
+<td class="cor"> <A href="Localização.html"> Localização </a></td>
+<td class="cor"> <A href="Visão e Missão da empresa.html"> Visão e Missão da empresa </a> </td>
+</tr>
+
+
+</BODY>
+</HTML>
